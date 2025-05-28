@@ -1,0 +1,111 @@
+import React from "react";
+
+const Logo = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1024 768"
+    height="768"
+    width="1024"
+    version="1.1"
+  >
+    <defs>
+      <linearGradient
+        id="gradient2"
+        x1="30%"
+        y1="120%"
+        x2="-10%"
+        y2="30%"
+        spreadMethod="pad"
+      >
+        <stop offset="0%" stopColor="#ffffff" stopOpacity="1" />
+        <stop offset="100%" stopColor="#000000" stopOpacity="1" />
+      </linearGradient>
+      <linearGradient
+        id="gradient3"
+        gradientTransform="rotate(-30)"
+        x1="30%"
+        y1="120%"
+        x2="-10%"
+        y2="30%"
+        spreadMethod="pad"
+      >
+        <stop offset="0%" stopColor="#ffffff" stopOpacity="1" />
+        <stop offset="50%" stopColor="#cccccc" stopOpacity="1" />
+        <stop offset="100%" stopColor="#000000" stopOpacity="1" />
+      </linearGradient>
+    </defs>
+
+    <g id="logo-group">
+      {/* Hidden image placeholder */}
+      <image
+        href=""
+        id="container"
+        x="272"
+        y="144"
+        width="480"
+        height="480"
+        style={{ display: "none" }}
+        transform="translate(0 0)"
+      />
+
+      <g id="logo-center" transform="translate(0 0)">
+        <image href="" id="icon_container" style={{ display: "none" }} x="0" y="0" />
+
+        <g
+          id="title"
+          style={{
+            fontStyle: "normal",
+            fontWeight: 300,
+            fontSize: 72,
+            lineHeight: 1,
+            fontFamily: "'Montserrat Light Alt1'",
+            fontVariantLigatures: "none",
+            textAlign: "center",
+            textAnchor: "middle",
+          }}
+          transform="translate(0 0)"
+        >
+          {/* Add all your path elements below as they are */}
+          <path
+            d="M405.68244,-50.4v3.312h32.256V-50.4Zm0,50.4h3.672v-22.248h28.584v-3.312h-32.256Z"
+            transform="translate(327.4156348000001 341.91599999999994) scale(1.67) translate(-405.68244 50.4)"
+            fill="#5881c6"
+            stroke="#5881c6"
+          />
+          <path
+            d="M451.10431,-50.4V0h3.672V-50.4Z"
+            transform="translate(403.2701577000001 341.91599999999994) scale(1.67) translate(-451.10431 50.4)"
+            fill="#707fc2"
+            stroke="#707fc2"
+          />
+          <path
+            d="M498.90669,-17.64c3.744,-1.08,6.696,-2.952,8.712,-5.688,2.016,-2.736,3.096,-6.048,3.096,-10.08,0,-5.256-1.8,-9.432-5.4,-12.456-3.6,-3.024-8.568,-4.536-14.904,-4.536h-18.072v3.312h18.072c5.328,0,9.432,1.224,12.312,3.6,2.808,2.376,4.248,5.76,4.248,10.08,0,4.392-1.44,7.776-4.248,10.152-2.88,2.376-6.984,3.528-12.312,3.528h-18.072V0h3.672v-16.488h14.4c1.44,0,3.096,-0.072,4.896,-0.36L507.33069,0h4.176Z"
+            transform="translate(438.73157230000004 341.91599999999994) scale(1.67) translate(-472.33869 50.4)"
+            fill="#897cbe"
+            stroke="#897cbe"
+          />
+          <path
+            d="M524.22931,-50.4V0h3.672V-50.4Z"
+            transform="translate(525.3889077000001 341.91599999999994) scale(1.67) translate(-524.22931 50.4)"
+            fill="#a17abb"
+            stroke="#a17abb"
+          />
+          <path
+            d="M545.46369,-50.4v3.312h32.256V-50.4Zm0,50.4h3.672v-22.248h28.584v-3.312h-32.256Z"
+            transform="translate(560.8503223000001 341.91599999999994) scale(1.67) translate(-545.46369 50.4)"
+            fill="#ba77b7"
+            stroke="#ba77b7"
+          />
+          <path
+            d="M606.43756,-17.352l20.304,-33.048h-3.816l-18.216,29.664-18.216,-29.664h-4.032l20.304,33.048V0h3.672Z"
+            transform="translate(622.6367652 341.91599999999994) scale(1.67) translate(-582.46156 50.4)"
+            fill="#d275b3"
+            stroke="#d275b3"
+          />
+        </g>
+      </g>
+    </g>
+  </svg>
+);
+
+export default Logo;
