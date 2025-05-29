@@ -7,7 +7,7 @@ import fallback from '../profile.png'
 import { db } from '../config/firebase'
 
 import { addDoc,doc, collection, getDoc,setDoc,query, orderBy, getDocs, onSnapshot,serverTimestamp } from 'firebase/firestore'
-const socket = io.connect(process.env.BACKEND);
+const socket = io.connect(process.env.REACT_APP_BACKEND);
 function Chat() {
 const [userData, setUserdata] = useState(null);
 const [messages,setMessages]=useState([])
