@@ -12,7 +12,7 @@ const server= http.createServer(app)
 
 const io = new Server(server,{
     cors:{
-        origin:process.env.PORT,
+        origin:PORT,
         methods:["GET","POST"],
     }
 })
@@ -25,6 +25,6 @@ io.on("connection",(socket)=>{
     })
 })
 
-server.listen(port, '0.0.0.0', () => {
+server.listen(PORT, '0.0.0.0', () => {
   console.log('Server is running on port 3001');
 });
