@@ -141,7 +141,7 @@ const [messages,setMessages]=useState([])
         <input
           type="text"
           onChange={(e) => setIncoming(e.target.value)}
-          className='text-main4 w-full h-10 rounded-xl'
+          className='text-main2 p-2 w-full h-10 rounded-xl'
         />
         <button onClick={handleSendmessage} className='ml-2 bg-white rounded-3xl w-10'>
           <img src={arr} className='m-auto' alt="" />
