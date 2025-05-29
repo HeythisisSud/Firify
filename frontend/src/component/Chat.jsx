@@ -13,6 +13,12 @@ const [userData, setUserdata] = useState(null);
 const [messages,setMessages]=useState([])
   const { user } = useContext(UserContext);
   const [ time,setTime]=useState('')
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault(); // Prevent newline if using textarea
+      handleSendmessage();
+    }
+  };
   useEffect(() => {
     const q = query(collection(db, "messages"), orderBy("timestamp")); // use Firestore timestamp if possible
 
@@ -92,6 +98,7 @@ const [messages,setMessages]=useState([])
       uid: user.uid
     };
   await addDoc(messagesCollection, payload);
+  setIncoming('')
     
   }
   useEffect(() => {
@@ -140,6 +147,7 @@ const [messages,setMessages]=useState([])
       <div className='flex'>
         <input
           type="text"
+          value={incoming}
           onChange={(e) => setIncoming(e.target.value)}
           className='text-main2 p-2 w-full h-10 rounded-xl'
         />
