@@ -148,6 +148,7 @@ const [messages,setMessages]=useState([])
         <input
           type="text"
           value={incoming}
+          onKeyDown={handleKeyDown}
           onChange={(e) => setIncoming(e.target.value)}
           className='text-main2 p-2 w-full h-10 rounded-xl'
         />
